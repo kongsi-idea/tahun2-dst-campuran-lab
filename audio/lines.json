@@ -1,0 +1,704 @@
+[
+ {
+  "v": "Y",
+  "voice": "zh-CN-YunxiNeural",
+  "text": "分开了！",
+  "key": "82637d0c"
+ },
+ {
+  "v": "Y",
+  "voice": "zh-CN-YunxiNeural",
+  "text": "差一点！",
+  "key": "6d78ab4e"
+ },
+ {
+  "v": "Y",
+  "voice": "zh-CN-YunxiNeural",
+  "text": "没分开",
+  "key": "158a0a3d"
+ },
+ {
+  "v": "Y",
+  "voice": "zh-CN-YunxiNeural",
+  "text": "再想想",
+  "key": "cc62e2a4"
+ },
+ {
+  "v": "Y",
+  "voice": "zh-CN-YunxiNeural",
+  "text": "都分出来了！",
+  "key": "08f3cbb2"
+ },
+ {
+  "v": "Y",
+  "voice": "zh-CN-YunxiNeural",
+  "text": "找到了！",
+  "key": "7df399b8"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "看得到的铁钉捡出来了，可是埋在沙里的找不到。有没有更快的方法？",
+  "key": "9f0941e8"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "铁钉和沙都沉下去，没有东西浮起来。",
+  "key": "d361dc9a"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "铁钉会被磁铁吸起来，沙不会。",
+  "key": "8fb08386"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "沙比筛孔小，漏下去了；铁钉比较大，留在筛子上。",
+  "key": "0735e301"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "这里没有水，滤纸用不上。",
+  "key": "fff89585"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "这里没有水，晒了也没变化。",
+  "key": "f06ea490"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "豆子可以一颗一颗捡，可是好慢，奶粉也捡不干净。有没有更快的方法？",
+  "key": "4049a99a"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "豆子沉下去，奶粉溶进水里，没有东西浮起来。",
+  "key": "347a4304"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "豆子和奶粉都不会被磁铁吸。",
+  "key": "d8c1ccb8"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "奶粉很细，漏下去了；豆子比较大，留在筛子上。",
+  "key": "0e4ebb71"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "枯叶和碎石样子很不一样，用手就能分开。",
+  "key": "54a51e28"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "枯叶浮上来，碎石沉下去。",
+  "key": "364e1939"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "枯叶和碎石都不会被磁铁吸。",
+  "key": "f30591f6"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "枯叶和碎石都比筛孔大，全都留在筛子上。",
+  "key": "9ebb86be"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "沙太细了，手抓不起来。",
+  "key": "8c9efbc1"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "沙沉在水底，没有东西浮起来。",
+  "key": "677423c9"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "沙和水都不会被磁铁吸。",
+  "key": "adbfd7a2"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "沙比筛孔小，跟着水一起漏下去了。",
+  "key": "7673714a"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "沙不会溶解，留在滤纸上；清水流下去了。",
+  "key": "978e446d"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "水晒干了，只剩下沙。沙分出来了，可是水不见了。",
+  "key": "889b755a"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "盐溶在水里，看不见，也抓不到。",
+  "key": "411d4903"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "盐溶在水里，没有东西浮起来。",
+  "key": "0d406dbd"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "盐和水都不会被磁铁吸。",
+  "key": "9ebbd1e7"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "盐溶在水里，全都漏下去了。",
+  "key": "2a80b683"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "盐溶在水里，颗粒非常小，穿过滤纸了。滤出来的水还是咸的。",
+  "key": "aee2bbb3"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "水晒干了，盐留在盘子里。",
+  "key": "0af10a94"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "花生可以一颗一颗捡，可是好慢，面粉也捡不干净。有没有更快的方法？",
+  "key": "c1d19546"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "花生沉下去，面粉散开，把水弄混浊了，没有东西浮起来。",
+  "key": "1baf9884"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "花生和面粉都不会被磁铁吸。",
+  "key": "4576a344"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "面粉很细，漏下去了；花生比较大，留在筛子上。",
+  "key": "e55dd56d"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "看得到的回形针捡出来了，可是埋在面粉里的找不到。有没有更快的方法？",
+  "key": "21dbf6e9"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "回形针沉下去，面粉散开，把水弄混浊了，没有东西浮起来。",
+  "key": "a65f649a"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "回形针会被磁铁吸起来，面粉不会。",
+  "key": "7dd3e907"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "面粉很细，漏下去了；回形针比较大，留在筛子上。",
+  "key": "816843b3"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "大石头和小石头大小差很多，用手就能分开。",
+  "key": "7e061a61"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "大石头和小石头都沉下去，没有东西浮起来。",
+  "key": "8a9adf10"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "大石头和小石头都不会被磁铁吸。",
+  "key": "35ddcb73"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "小石头比筛孔小，漏下去了；大石头比较大，留在筛子上。",
+  "key": "f64c2cf5"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "树枝和硬币样子很不一样，用手就能分开。",
+  "key": "d5c25743"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "树枝浮上来，硬币沉下去。",
+  "key": "55af4d50"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "硬币会被磁铁吸起来，树枝不会。",
+  "key": "d21afb34"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "树枝和硬币都比筛孔大，全都留在筛子上。",
+  "key": "874274b9"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "纽扣比较大，用手就能从水里捡出来。",
+  "key": "a80a7c97"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "纽扣沉在水底，没有东西浮起来。",
+  "key": "cacc67dc"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "纽扣和水都不会被磁铁吸。",
+  "key": "347bf81d"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "水从筛孔漏下去了；纽扣比较大，留在筛子上。",
+  "key": "3ff98178"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "纽扣留在滤纸上，水流下去了。",
+  "key": "c1e3b922"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "水晒干了，只剩下纽扣。纽扣分出来了，可是水不见了。",
+  "key": "dece2048"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "面粉太细了，散在水里，手抓不起来。",
+  "key": "1b1f7d46"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "面粉散在水里，没有东西浮起来。",
+  "key": "a76c405d"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "面粉和水都不会被磁铁吸。",
+  "key": "9ba6de0b"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "面粉比筛孔小，跟着水一起漏下去了。",
+  "key": "580f05a5"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "面粉不会溶解，留在滤纸上；清水流下去了。",
+  "key": "59920140"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "水晒干了，只剩下面粉。面粉分出来了，可是水不见了。",
+  "key": "a1a64528"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "沙和盐都太细了，手捡不出来。",
+  "key": "19ea5f9a"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "盐溶进水里，沙沉下去，没有东西浮起来。",
+  "key": "fc5bcd70"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "沙和盐都不会被磁铁吸。",
+  "key": "f4692476"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "沙和盐都比筛孔小，全都漏下去了。",
+  "key": "24bc0acb"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "沙还是沉在水底，没有东西浮起来。",
+  "key": "1c542a8f"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "沙和盐水都不会被磁铁吸。",
+  "key": "58582efe"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "沙比筛孔小，跟着盐水一起漏下去了。",
+  "key": "90b13e8e"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "水晒干了，沙和盐又混在一起了！",
+  "key": "1ca398aa"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "已经加过水了，盐早就溶解了。",
+  "key": "6dafbd65"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "盐溶在水里，又穿过滤纸了。",
+  "key": "f0855e59"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "盐已经溶解在水里了，再加水也分不开。",
+  "key": "54bb462d"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "水晒干了，剩下面粉，看不出有没有盐。",
+  "key": "e3fa2d85"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "这杯已经滤过了，滤纸上只剩面粉。",
+  "key": "ae4ddbb0"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "不对哦。看一看，哪个盘子里留下了白色的盐粒？",
+  "key": "456e9027"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "为什么分得开？因为它们……",
+  "key": "549d4540"
+ },
+ {
+  "v": "Y",
+  "voice": "zh-CN-YunxiNeural",
+  "text": "对！",
+  "key": "f50220ad"
+ },
+ {
+  "v": "Y",
+  "voice": "zh-CN-YunxiNeural",
+  "text": "再试试！",
+  "key": "994eb582"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "选一个混合物",
+  "key": "5e78d513"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "把一个工具拖到大碗上",
+  "key": "ce4858f1"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "看一看，会发生什么？",
+  "key": "a1e0cf2b"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "看一看：什么漏下去了？",
+  "key": "f0752670"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "用手：点碗里的东西，把它捡出来",
+  "key": "d48c66cb"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "看一看：什么浮上来？什么沉下去？",
+  "key": "08a50bcd"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "拿着磁铁，在碗上面慢慢移动",
+  "key": "af5ac2a7"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "左右拖动筛子，摇一摇",
+  "key": "aaf1ea9a"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "看一看：水流下去，什么留在滤纸上？",
+  "key": "9c677a8e"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "拖着太阳，沿着虚线走",
+  "key": "f2c613bd"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "看一看：盐怎么了？沙怎么了？",
+  "key": "178bf96f"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "把枯叶和碎石分开！",
+  "key": "a46a33c7"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "把树枝和硬币分开！",
+  "key": "5045a142"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "把大、小石头分开！",
+  "key": "c4edfe61"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "把铁钉和沙分开！",
+  "key": "976529f2"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "把回形针和面粉分开！",
+  "key": "d8a20e83"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "把豆子和奶粉分开！",
+  "key": "cb971bd9"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "把花生和面粉分开！",
+  "key": "a0e54b15"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "把沙和水分开！",
+  "key": "2a51156b"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "把水和面粉分开！",
+  "key": "1a5584b6"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "把纽扣和水分开！",
+  "key": "2900a936"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "把盐水分开！",
+  "key": "001abc17"
+ },
+ {
+  "v": "Z",
+  "voice": "zh-CN-YunyangNeural",
+  "text": "大挑战！沙和盐混在一起，一个工具分不开。要用好几个工具，一步一步来。",
+  "key": "9cd6d6d4"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "先加水，盐溶解了；再用滤纸把沙留下；最后把盐水晒干，就得到盐。",
+  "key": "9a911ce8"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "沙和盐混在一起，一个工具分不开。想一想，盐遇到水会怎么样？",
+  "key": "187fd15e"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "盐溶解了，沙沉在碗底。接下来，用哪个工具把沙留下来？",
+  "key": "493e376f"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "沙留在滤纸上了，盐水在烧杯里。怎么把盐找回来？",
+  "key": "461e1c06"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "第 1 步完成：盐溶解了，沙沉在碗底。",
+  "key": "26bfe45c"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "第 2 步完成：沙留在滤纸上，盐水流进了烧杯。",
+  "key": "661c9b60"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "第 3 步完成：盐留在浅盘里了。",
+  "key": "4f12067a"
+ },
+ {
+  "v": "Z",
+  "voice": "zh-CN-YunyangNeural",
+  "text": "大挑战！A、B 两杯都是水和面粉，看起来一模一样，其中一杯加了盐。想一想，怎么找出来？",
+  "key": "b171aca7"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "先用滤纸把面粉分出来，再把滤出来的水晒干，看哪个盘子里有盐。",
+  "key": "c163a2ae"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "把工具拖到 A 杯或 B 杯上，试一试。",
+  "key": "a7867172"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "看起来都一样，怎么知道哪杯有盐？",
+  "key": "ebf538c0"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "两杯都晒完了。哪一杯有盐？",
+  "key": "0c3e9f7e"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "还有一杯没晒。把另一杯也试一试。",
+  "key": "fac97021"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "全班先猜一猜：每个工具，能不能把它们分开？点一下格子换答案，猜好了就按开始试。",
+  "key": "dbf8e02e"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "开始试！每试一个工具，就看看谁猜对了。",
+  "key": "5ed87a4e"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "先选一个混合物。",
+  "key": "cd079e82"
+ },
+ {
+  "v": "X",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "全部通关了，太棒了！",
+  "key": "ad6c6f6e"
+ }
+]

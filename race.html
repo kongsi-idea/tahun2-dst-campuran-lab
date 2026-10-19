@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>溶解赛跑</title>
+<meta name="description" content="二年级科学：溶解。猜一猜，哪一杯的糖最先溶解完？">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/race.css">
+<script src="https://kongsi-idea.vercel.app/data/track-use.js" data-slug="tahun2-dst-campuran-lab" defer></script>
+</head>
+<body>
+<div id="stage">
+  <canvas id="cv" width="1600" height="900"></canvas>
+
+  <a id="back" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M20 6 9 16l11 10" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>回到开场</span></a>
+  <div id="tabs" role="tablist" aria-label="三场比赛"></div>
+  <button id="mute" type="button" aria-label="声音开关" aria-pressed="false">
+    <svg class="on" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 12h6l8-7v22l-8-7H4z" fill="currentColor"/><path d="M22 11c3 3 3 7 0 10M25 7c5 5 5 13 0 18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+    <svg class="off" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 12h6l8-7v22l-8-7H4z" fill="currentColor"/><path d="M22 12l8 8M30 12l-8 8" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/></svg>
+  </button>
+
+  <div id="prompt" aria-live="polite"></div>
+  <div id="hits"></div>
+  <div id="labels"></div>
+  <div id="flag" aria-hidden="true"><svg viewBox="0 0 100 150"><ellipse cx="22" cy="144" rx="16" ry="5" fill="rgba(60,35,5,.3)"/><rect x="19" y="8" width="6" height="136" rx="3" fill="#8a5a2a"/><rect x="19" y="8" width="2.4" height="136" rx="1.2" fill="#c78b4a"/><g class="cloth"><path d="M25 12 L92 30 L25 56 Z" fill="#e2573f"/><path d="M25 12 L92 30 L25 34 Z" fill="#f48a74"/></g><circle cx="22" cy="8" r="6" fill="#f0a41c"/></svg></div>
+  <div id="ribbons"></div>
+
+  <button id="act" type="button"></button>
+  <div id="info">
+    <div id="fair"></div>
+    <div id="reminder"><img src="assets/tools/stopwatch.png" alt="" draggable="false"><span>这是示意动画。真的快慢，要在课室里用秒表测一测！</span></div>
+  </div>
+
+  <div id="card" role="status">
+    <div class="title"></div><p class="sum"></p>
+    <button id="again" type="button">再比一次</button>
+  </div>
+  <div id="final" role="dialog" aria-label="总结">
+    <div class="box">
+      <div class="head">三场比赛的发现</div>
+      <p class="rule"></p>
+      <div class="btns"><button id="restart" type="button">再玩一次</button><a id="home" href="index.html">回到开场</a></div>
+    </div>
+  </div>
+  <div id="soundHint" role="status">点一下画面，开启声音</div>
+</div>
+<div id="rotate" role="alert" aria-live="assertive">
+  <div class="rot-inner">
+    <svg class="phone" viewBox="0 0 64 64" aria-hidden="true"><rect x="19" y="6" width="26" height="52" rx="6" fill="#fff" fill-opacity=".12" stroke="#fff" stroke-width="3"/><circle cx="32" cy="51" r="2.6" fill="#fff"/><path d="M14 20c-4 3-6 7-6 12" fill="none" stroke="#ffd36b" stroke-width="3" stroke-linecap="round"/><path d="M5 30l3 5 5-3" fill="none" stroke="#ffd36b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <p class="r-main">请把手机转横</p>
+    <p class="r-sub">转了没反应？打开控制中心，关掉直立方向锁定</p>
+  </div>
+</div>
+<script src="js/race-data.js"></script>
+<script src="audio/race/manifest.js"></script>
+<script src="js/race-voice.js"></script>
+<script src="js/race.js"></script>
+</body>
+</html>

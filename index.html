@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>分离大法实验室</title>
+<meta name="description" content="二年级科学：混合物。六个分离工具随便用，看看哪个办法行得通。">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://kongsi-idea.vercel.app/data/track-use.js" data-slug="tahun2-dst-campuran-lab" defer></script>
+</head>
+<body>
+<div id="stage" class="m-home">
+  <canvas id="cv" width="1600" height="900"></canvas>
+  <div id="toolbar" aria-label="工具栏"></div>
+  <canvas id="dim" width="1600" height="900" aria-hidden="true"></canvas>
+  <div id="steps" aria-label="步骤"></div>
+  <div id="chainbar" aria-live="polite"><div class="cb-row"></div><p class="cb-hint"></p></div>
+  <div id="taskbar"><i class="tb-no"></i><b class="tb-txt"></b></div>
+  <canvas id="cv2" width="1600" height="900" aria-hidden="true"></canvas>
+  <div id="tip" class="pill" aria-live="polite"></div>
+  <div id="toast" class="pill" aria-live="polite"></div>
+  <div id="result" data-kind="ok" role="status">
+    <i class="badge" aria-hidden="true"></i>
+    <div class="txt"><div class="title"></div><p class="why"></p></div>
+    <div class="extra"><p class="hint"></p><button class="go" id="go" type="button">去试试</button></div>
+    <div class="prop"><p class="pask"></p><div class="popts"></div></div>
+    <button class="again" id="again" type="button">再来一次</button>
+  </div>
+  <div id="mixes" aria-label="选混合物"></div>
+  <div id="pboard" aria-label="预测板"></div>
+  <div id="cupask"><p>哪一杯有盐？</p><button type="button" data-cup="A">A 杯</button><button type="button" data-cup="B">B 杯</button></div>
+  <button id="back" type="button" aria-label="回到开场"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 24L24 8l18 16" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 22v18h24V22" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>回到开场</span></button>
+  <button id="mute" type="button" aria-label="声音开关" aria-pressed="false"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 19h8l10-9v28l-10-9H6z" fill="currentColor"/><g class="on"><path d="M31 17c3 4 3 10 0 14" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M37 11c6 7 6 19 0 26" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></g><g class="off"><path d="M31 18l12 12M43 18L31 30" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/></g></svg></button>
+  <div id="soundhint" class="pill" aria-live="polite">点一下画面，开启声音</div>
+  <section id="home" aria-label="开场"></section>
+  <section id="qmap" aria-label="闯关选关"></section>
+  <section id="final" aria-label="闯关完成"></section>
+</div>
+<div id="rotate" role="alert" aria-live="assertive">
+  <div class="rot-inner">
+    <svg class="phone" viewBox="0 0 64 64" aria-hidden="true"><rect x="19" y="6" width="26" height="52" rx="6" fill="#fff" fill-opacity=".12" stroke="#fff" stroke-width="3"/><circle cx="32" cy="51" r="2.6" fill="#fff"/><path d="M14 20c-4 3-6 7-6 12" fill="none" stroke="#ffd36b" stroke-width="3" stroke-linecap="round"/><path d="M5 30l3 5 5-3" fill="none" stroke="#ffd36b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <p class="r-main">请把手机转横</p>
+    <p class="r-sub">转了没反应？打开控制中心，关掉直立方向锁定</p>
+  </div>
+</div>
+<script src="audio/manifest.js"></script>
+<script src="js/data.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/tools.js"></script>
+<script src="js/flows.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/props.js"></script>
+<script src="js/chain.js"></script>
+<script src="js/modes.js"></script>
+<script src="js/voice.js"></script>
+<script src="js/guide.js"></script>
+</body>
+</html>
