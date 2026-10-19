@@ -93,6 +93,11 @@
     const x = (u * 2 - 1) * rx, y = -((v * 0.8) * 20) - (1 - Math.abs(x) / rx) * 10;
     return { x: cx + x, y: cy + y };
   }
+  /* 筛子里的落点：向日葵式铺满整个网面，每 24 个一层往上堆 */
+  function sieveSlot(i, cx, cy, rx) {
+    const a = i * 2.39996 + 0.7, rr = Math.sqrt(((i % 24) + 0.5) / 24), layer = Math.floor(i / 24);
+    return { x: cx + Math.cos(a) * rr * rx, y: cy + Math.sin(a) * rr * rx * 0.3 - layer * 8 - (1 - rr) * 6 };
+  }
   /* 东西的「脚印」：几个代表点（相对中心）。铁钉取两端，其他取内接椭圆的 8 个点。和 drawRaw 的画法一致（先转再压扁）。 */
   function footprint(it, sc, rot) {
     const sq = 0.8, pts = [];
@@ -110,10 +115,11 @@
   /* 筛网内部的椭圆（筛子图本地坐标，原点＝筛子图中心）：量自筛子图的网面 */
   const BASIN = { cx: 0, cy: null, rx: 112, ry: 31 };
   const basinOver = (x, y) => { const r = Math.hypot((x - BASIN.cx) / BASIN.rx, (y - BASIN.cy) / BASIN.ry); return Math.max(0, r - 1) * Math.min(BASIN.rx, BASIN.ry); };
-  /* 把东西（中心 x,y）收进筛网椭圆：整个脚印都在里面才算，不够就往中心收；返回收好的位置 */
+  /* 把东西（中心 x,y）收进筛网椭圆：脚印的左右和下半都在里面才算，不够就往中心收；返回收好的位置。
+     上半可以高出网面（堆起来本来就会冒出来）；整个脚印都要在扁椭圆里的话，东西一多会全挤到中线排成一串（大、小石头 40 颗） */
   function fitBasin(it, sc, rot, x, y) {
     const fp = footprint(it, sc, rot);
-    const ok = (px, py) => fp.every(([dx, dy]) => basinOver(px + dx, py + dy) <= 0);
+    const ok = (px, py) => fp.every(([dx, dy]) => basinOver(px + dx, py + Math.max(dy, 0)) <= 0);
     if (ok(x, y)) return { x, y };
     let lo = 0, hi = 1;
     for (let n = 0; n < 14; n++) { const m = (lo + hi) / 2; if (ok(BASIN.cx + (x - BASIN.cx) * m, BASIN.cy + (y - BASIN.cy) * m)) lo = m; else hi = m; }
@@ -134,7 +140,7 @@
     const mix = S.mix, id = mix.id, liquid = !!mix.water, g = svGeom(), sv = LAB.SIEVE_POS;
     const fineKind = mix.base || null;
     const finePass = (!!mix.base && !mix.water) || liquid;             // 细料（沙、奶粉、面粉、沙和盐）和水会漏下去
-    const fallK = {}; (mix.fall || []).forEach((k) => { fallK[k] = 1; });          // 小石头：比筛孔小，摇的时候一颗一颗漏下去
+    const fallK = {}; (mix.fall || []).forEach((k) => { fallK[k] = 1; });          // 比筛孔小、摇的时候一颗一颗漏下去的东西（目前没有混合物用到）
     const run = { tool: 'sieve', phase: 'move', t: 0, spr: { x: p.x, y: p.y, sc: p.sc }, off: 0, shakeDist: 0, fp: 0, heap: [], falling: [], nFall: 0, nFell: 0, fineAmt: 0, drag: null, need: 760, slotN: 0 };
     const mouth = { x: sv.x, y: sv.y + g.mouthDy };
     BASIN.cy = g.mouthDy;                // 筛网椭圆的中心就是「筛口」
@@ -150,7 +156,7 @@
             side: 'l', dur: 2.3, dest: { x: mouth.x + 20, y: mouth.y - 4 }, grains: liquid ? (mix.base || null) : fineKind, liquid: liquid ? mix.water : null,
             itemTarget: (it) => {
               const sc = HEAP_SC[it.kind], rot = it.elong ? rand(-0.6, 0.6) - it.ax.ang : rand(0, TAU);
-              const s0 = heapSlot(run.slotN++, 0, g.mouthDy + 12, g.mouthRx * 0.74), f = fitBasin(it, sc, rot, s0.x, s0.y);
+              const s0 = sieveSlot(run.slotN++, 0, g.mouthDy + 6, BASIN.rx * 0.92), f = fitBasin(it, sc, rot, s0.x, s0.y);
               return { x: sv.x + f.x, y: sv.y + f.y, sc, rot };
             },
             onItem: (it, tg) => { run.heap.push({ it, bx: tg.x - sv.x, by: tg.y - sv.y, ox: 0, x: tg.x - sv.x, y: tg.y - sv.y, rot: tg.rot, sc: tg.sc, k: Math.random() }); if (fallK[it.kind]) run.nFall++; },
