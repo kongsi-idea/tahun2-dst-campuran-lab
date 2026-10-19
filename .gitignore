@@ -5,3 +5,4 @@ dist/
 .env*
 .playwright-output/
 assets/raw/
+.vercel
