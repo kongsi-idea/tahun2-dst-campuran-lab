@@ -256,7 +256,8 @@ def quest():
         E = lambda js: pg.evaluate(js)
         L = 'window.__debug.LAB'
         data = E('({lv: ' + L + '.LEVELS, truth: ' + L + '.TRUTH, tp: ' + L + '.TOOL_PROP})')
-        E(L + ".modes.go('qmap')")
+        E("document.querySelector('#home .hcard.c3').click()")      # 从开场卡片点进去，跟学生一样（v1.0 卡片连错模式，直接 go('qmap') 测不出来）
+        chk('开场「闯关」卡片进得了选关', E(L + '.modes.mode') == 'qmap')
         chk('选关画面：13 个关卡按钮', E("document.querySelectorAll('.lvl').length") == 13)
         pg.screenshot(path=SHOT + 'cp2-quest-map.png')
         E("document.querySelectorAll('.lvl')[0].click()")

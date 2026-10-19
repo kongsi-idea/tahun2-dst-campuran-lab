@@ -60,7 +60,7 @@
           ${img('tools/hand-point.png', 'right:14px;top:70px;height:150px;transform:rotate(-8deg)')}
           ${img('tools/tool-magnet.png', 'left:10px;bottom:4px;height:92px;transform:rotate(-10deg)')}
         </div><div class="nm">先猜再试</div><p class="ds">老师带全班先猜<br>再试一试，看谁猜对</p></button>
-        <button type="button" class="hcard c3" data-go="quest"><div class="art">
+        <button type="button" class="hcard c3" data-go="qmap"><div class="art">
           <svg viewBox="0 0 24 24" style="left:96px;top:0;width:110px;height:110px">${starSvg(true, 'h1').replace(/^<svg[^>]*>/, '').replace(/<\/svg>$/, '')}</svg>
           <svg viewBox="0 0 24 24" style="left:10px;top:50px;width:96px;height:96px;transform:rotate(-12deg)">${starSvg(true, 'h2').replace(/^<svg[^>]*>/, '').replace(/<\/svg>$/, '')}</svg>
           <svg viewBox="0 0 24 24" style="left:196px;top:50px;width:96px;height:96px;transform:rotate(12deg)">${starSvg(true, 'h3').replace(/^<svg[^>]*>/, '').replace(/<\/svg>$/, '')}</svg>
