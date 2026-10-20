@@ -15,31 +15,26 @@
 - 语速 +0%，不调 pitch。溶解赛跑的声音由 race 页自己配。
 
 ## ⏯️ 目前做到哪
-2026-10-19 已上线 v1.0；2026-10-20 v1.0.1（修闯关入口；大、小石头用筛子改 ❌，细网筛石头都比筛孔大；筛子堆放改向日葵铺满网面），等老师课堂试用。
-- 正式网址：https://tahun2-dst-campuran-lab.vercel.app/（入口 index.html，另一页 race.html）
-- GitHub：kongsi-idea/tahun2-dst-campuran-lab（push 到 main 自动部署）；Hub 已登记（4 张缩略图、standards 8.1.1–8.1.4，主题「混合物」）。
+- 10-19 上线 v1.0；10-20 v1.0.1：修开场「闯关」卡片（连到不存在的模式 quest → qmap）；大、小石头用筛子改 ❌（细网筛，石头都比筛孔大，老师问「石头怎么会可以被筛出来？」）；筛子里的东西改向日葵铺满网面（`sieveSlot`，原来 40 颗挤成一串）。
+- 10-20 Hub 封面换成 draw 生成的封面（老师挑 A：磁铁吸铁钉、筛子漏奶粉、滤纸、太阳晒盐），同一张存成 `og.jpg`，index.html 加 og meta，分享网址有预览图。
+- 正式网址：https://tahun2-dst-campuran-lab.vercel.app/（另一页 race.html）；GitHub kongsi-idea/tahun2-dst-campuran-lab，push 到 main 自动部署。Hub 已登记 v1.0.1（`npm run check` 全过）。
 
 ## 🚦 目前状态
-- 已上线 v1.0.1，等老师课堂试用
-- 课本出处：二年级科学课本第 8 课，第 89–98 页。**课本原页未核**：课本 PDF 已不在电脑上，引用的课本句子来自机器转写稿，原页还没核对。
-- DSKP 对照：8.1.1–8.1.4（SJKC／SK TAHUN2 截取档，未审核）；不接名单
+- 可用，等老师课堂试用（quality「待评估」）。`test-cp2.py all` 全过（quest 改成从开场卡片点进去）。
+- 课本原页未核：二年级科学课本第 8 课 p.89–98，PDF 已不在电脑上，引用句来自机器转写稿。
+- 没有真机／触控实测。
 
 ## ➡️ 下一步
-1. 老师课堂试用，收集意见；有课本原页时回头核对引用句。
-
-## 📋 上架前要备齐（Hub 登记在 kongsi-idea/data/tools.js，规则见 teaching-tools/agents.md）
-- [ ] `standards` 能解析出主题（主题标在 dskp-index.js 节点上，同一内容跨年级同一个词；综合复习等例外才用 `topicOverride`）
-- [ ] `modes`（全班投影／上台对战／各自练习／回家练习，1–3 个，第一个是主要方式）
-- [ ] 缩略图 4 张：封面（看得到教的内容）→ 玩法 → 答对／答错反馈 → 老师端；按 4:3 截
-- [ ] 展示名带内容词，同年级套路词不重复；slug／展示名不放月份
-- [ ] 复习卷：`collection`／`setLabel` 并登记 TOOL_COLLECTIONS
-- [ ] 要老师后台：data/teacher/{slug}.js ＋ TEACHER_TOOLS（不再复制 *-admin.html）
+1. 老师课堂试用，收集意见。
+2. 有课本 PDF 时核对 p.89–98 引用句。
 
 ## ⚠️ 注意事项
-- 本机测试：`python3 -m http.server 8791 --bind 127.0.0.1`，开 http://127.0.0.1:8791（8765 常被 Hub 本机服务占用）
+- 本机测试：`python3 -m http.server 8791 --bind 127.0.0.1`（8765 常被 Hub 本机服务占用）。
+- Hub（kongsi-idea）push 不会自动部署：要从干净 worktree `vercel --prod` ＋ `alias set`（10-20 照做）。
+- 用 `python3 -I` 会读不到 PIL（装在使用者 site-packages）；Python 3.9 源码单行太长又含中文会误报 Non-UTF-8，长字串放文字档再读。
 
 ## 🕐 最后更新
-2026-10-19
+2026-10-20 · Claude Opus 5.5 @ Mac · Git：✅ 已推
 
 ## 检查点 1 已知弱点（自评）
 - 奶粉质感偏灰白，仍有一点像液体。
