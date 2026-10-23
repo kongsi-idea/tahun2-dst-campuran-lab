@@ -41,3 +41,10 @@
 - 盐水过滤后滤纸的湿痕像淡蓝水渍。
 - 放大镜不演示大沙粒被挡（只有盐水才弹出）。
 - 没有真机／触控实测。
+
+## 语音包（2026-10-23）
+- 起因：Vercel 免费团队请求数用满；每台新设备把用到的单档语音逐个请求。
+- 现在：http(s) 下页面载完后取一次 `audio/pack.mp3`（主页 117 句、约 2.8MB）和 `audio/race/pack.mp3`（race.html 13 句、约 0.35MB），用 Web Audio 按 `audio/pack.js`／`audio/race/pack.js` 的 `[开始秒, 长度秒]` 切句播放；共用播放器在 `js/pack-player.js`（`voice.js`、`race-voice.js` 调用）。pack 没载完／AudioContext 未被点击唤醒／解码失败／file:// 时，照旧逐档播 `<audio>` 单档。**单档 mp3 必须留在仓库**。画面与玩法不变；无 service worker。
+- 改了任何朗读文字：`gen-voice.py`（和 `gen-voice-race.py`）→ `pack-voice.py`（需 ffmpeg）；漏跑的话新句子在 http 下走单档（仍有声，只多一次请求）。
+- 没有实测 iOS 真机静音开关（已设 `navigator.audioSession.type='playback'`；旧 iOS 播循环无声 `<audio>`）。
+

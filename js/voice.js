@@ -16,9 +16,10 @@
     return h.toString(16).padStart(8, '0');
   }
   const hint = document.getElementById('soundhint');
+  const PP = window.makePackPlayer ? window.makePackPlayer(BASE + 'pack.mp3', window.VOICE_PACK) : null;   // 语音包（见 pack-player.js）
   const V = LAB.voice = {
     on: true, audio: null, token: 0, blocked: null, spoken: [], missing: [], VOICES, clipKey,
-    stop() { this.token++; if (this.audio) { try { this.audio.pause(); } catch (e) { /* 忽略 */ } this.audio = null; } },
+    stop() { this.token++; if (PP) PP.stop(); if (this.audio) { try { this.audio.pause(); } catch (e) { /* 忽略 */ } this.audio = null; } },
     setOn(on) { this.on = !!on; if (!on) { this.stop(); showHint(false); } },
     /* lines：[{v:'X', t:'句子'}, ...] 依序播；done 在全部播完时调用 */
     say(lines, done) {
@@ -33,6 +34,8 @@
     one(l, my, cb) {
       const key = clipKey(VOICES[l.v], l.t), fin = () => { if (my === this.token) cb(); };
       if (!(window.VOICE_CLIPS && window.VOICE_CLIPS[key])) { this.missing.push(l.t); setTimeout(fin, 400); return; }       // 缺档：安静带过，不用机械声
+      const single = () => {
+      if (my !== this.token) return;
       try {
         const au = new Audio(BASE + key + '.mp3'); this.audio = au; au.onended = fin; au.onerror = () => setTimeout(fin, 200);
         const p = au.play();
@@ -41,6 +44,9 @@
           if (err && err.name === 'NotAllowedError') this.waitGesture(au, my, fin); else fin();
         });
       } catch (e) { fin(); }
+      };
+      if (PP && PP.play(key, fin, single)) return;       // 语音包已载好就从包里切这一句，否则逐档播单档
+      single();
     },
     /* 浏览器挡下自动播放：等第一次点击／按键，补播同一个 mp3 */
     waitGesture(au, my, fin) {

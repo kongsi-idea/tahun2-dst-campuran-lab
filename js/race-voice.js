@@ -8,11 +8,12 @@
     for (const b of new TextEncoder().encode(voice + '|' + text)) { h ^= b; h = Math.imul(h, 0x01000193) >>> 0; }
     return h.toString(16).padStart(8, '0');
   }
+  const PP = window.makePackPlayer ? window.makePackPlayer('audio/race/pack.mp3', window.VOICE_PACK_RACE) : null;   // 语音包（见 pack-player.js）
   const hint = () => document.getElementById('soundHint');
   const soundHint = (on) => { const el = hint(); if (el) el.classList.toggle('show', !!on); };
   const Voice = {
     on: true, audio: null, token: 0, spoken: [], missing: [], blocked: 0,
-    stop() { this.token++; soundHint(false); if (this.audio) { try { this.audio.pause(); } catch (e) { } this.audio = null; } if ('speechSynthesis' in window) try { speechSynthesis.cancel(); } catch (e) { } },
+    stop() { this.token++; if (PP) PP.stop(); soundHint(false); if (this.audio) { try { this.audio.pause(); } catch (e) { } this.audio = null; } if ('speechSynthesis' in window) try { speechSynthesis.cancel(); } catch (e) { } },
     say(lines, done) {
       this.stop();
       const list = (Array.isArray(lines) ? lines : [lines]).filter(Boolean);
@@ -26,15 +27,20 @@
       const key = clipKey(l.v, l.t);
       const fin = () => { if (my === this.token) cb(); };
       if (window.VOICE_CLIPS_RACE && window.VOICE_CLIPS_RACE[key]) {
-        try {
-          const au = new Audio('audio/race/' + key + '.mp3'); this.audio = au; au.onended = fin;
-          au.onerror = () => { if (my === this.token) this.tts(l, my, fin); };
-          const p = au.play();
-          if (p && p.catch) p.catch((err) => {
-            if (my !== this.token || this.audio !== au) return;
-            if (err && err.name === 'NotAllowedError') this.waitGesture(au, my, fin); else this.tts(l, my, fin);
-          });
-        } catch (e) { this.tts(l, my, fin); }
+        const single = () => {
+          if (my !== this.token) return;
+          try {
+            const au = new Audio('audio/race/' + key + '.mp3'); this.audio = au; au.onended = fin;
+            au.onerror = () => { if (my === this.token) this.tts(l, my, fin); };
+            const p = au.play();
+            if (p && p.catch) p.catch((err) => {
+              if (my !== this.token || this.audio !== au) return;
+              if (err && err.name === 'NotAllowedError') this.waitGesture(au, my, fin); else this.tts(l, my, fin);
+            });
+          } catch (e) { this.tts(l, my, fin); }
+        };
+        if (PP && PP.play(key, fin, single)) return;       // 语音包已载好就从包里切这一句，否则逐档播单档
+        single();
         return;
       }
       this.missing.push(l.t); this.tts(l, my, fin);
